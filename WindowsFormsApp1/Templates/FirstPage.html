@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>College Report</title>
+    <style>
+        body {
+            font-family: 'ScheherazadeNew', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header, .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="logo.png" alt="College Logo" class="logo" />
+        <h2>تقرير الجامعات</h2>
+    </div>
+
+    <!-- Table Section with Doctors' Names -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم الدكتور</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- This will be populated dynamically with doctor names -->
+                <tr>
+                    <td>دكتور أحمد علي</td>
+                    <td><input type="checkbox" name="doctor" value="أحمد علي" /></td>
+                </tr>
+                <tr>
+                    <td>دكتور محمد مصطفى</td>
+                    <td><input type="checkbox" name="doctor" value="محمد مصطفى" /></td>
+                </tr>
+                <!-- Add more rows dynamically as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 College Name - All Rights Reserved</p>
+    </div>
+</body>
+</html>

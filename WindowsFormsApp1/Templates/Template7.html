@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+	<head>
+		<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>مذكرة للعرض على مجلس الكلية</title>
+				<style>
+					body {
+					font-family: 'ScheherazadeNew', sans-serif; /* Ensure to load this font for proper Arabic rendering */
+					direction: rtl; /* Set the text direction to right-to-left */
+					margin: 20px;
+					padding: 20px;
+					border: 1px solid #000; /* Optional: border for better visual separation */
+					}
+					h1 {
+					text-align: center;
+					}
+					.subject, .addressee, .studentInfo, .conditions, .conclusion, .closing {
+					margin-bottom: 20px;
+					}
+					.conditions {
+					list-style-type: none; /* Remove bullet points for conditions */
+					padding: 0;
+					}
+					.conditions li {
+					margin-bottom: 10px; /* Space between conditions */
+					}
+				</style>
+			</head>
+	<body>
+		<h1>مذكرة للعرض على مجلس الكلية</h1>
+
+		<div class="subject">
+			<strong>الموضوع :</strong>
+			<span>إعادة قيد الطالبة {StudentName}</span>
+		</div>
+
+		<div class="addressee">
+			<strong>إلى:</strong>
+			<span>أصحاب السعادة أعضاء مجلس الكلية المحترمين</span>
+		</div>
+
+		<div class="mainContent">
+			<div class="studentInfo">
+				<strong>معلومات الطالب:</strong>
+				<p>
+					الاسم: <span>{StudentName}</span>
+				</p>
+				<p>
+					رقم الطالب: <span>{StudentId}</span>
+				</p>
+				<p>
+					الفصل الدراسي: <span>{SemsterNumber}</span>
+				</p>
+				<p>
+					السنة الأكاديمية: <span>{Year}</span>
+				</p>
+			</div>
+
+			<div class="conditions">
+				<strong>الشروط:</strong>
+				<ul>
+					<li>سجلت الطالبة هبوط عميق في المعدل</li>
+					<li>ألا يكون قد مضى على قيدها أكثر من 3 فصول دراسية بنظام الفصول الثلاثة وفصلين بنظام الفصلين الدراسيين وسنة واحدة بنظام السنة الدراسية</li>
+					<li>لم يسبق لها أن أعيد قيدها</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="conclusion">
+			<p>وعليه أرجو من سعادتكم الموافقة على هذا الطلب والأمر متروك لكم لإتخاذ القرار في هذا الشأن.</p>
+		</div>
+
+		<div class="closing">
+			<p>ولكم مني خالص المودة والتقدير.</p>
+		</div>
+	</body>
+</html>
